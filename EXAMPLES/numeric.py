@@ -11,7 +11,8 @@ print("c, d, e", c, d, e)
 f = 20.22
 g = .0001
 h = 25.
-print("f, g, h", f, g, h)
+j = .34e22
+print("f, g, h, j", f, g, h, j)
 print()
 print("a + b", a + b)
 print("a + f", a + f)
