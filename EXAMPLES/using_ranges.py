@@ -22,3 +22,7 @@ print("range(10, 0, -1): ", end=' ')
 for x in range(10, 0, -1):  # Start=10, Stop=1, Step=-1 (10 through 1 by 1)
     print(x, end=' ')
 print()
+
+for _ in range(3):
+    print("how do you like Python NOW???")
+

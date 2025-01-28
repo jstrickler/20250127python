@@ -10,6 +10,7 @@ with open("../DATA/knights.txt") as knights_in:
 pprint(knight_info)
 print()
 
+#   KEY, VALUE
 for name, info in knight_info.items():
     print(info[0], name)
 

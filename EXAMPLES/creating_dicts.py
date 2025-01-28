@@ -1,4 +1,5 @@
 d1 = dict()  # create new empty dict
+d1 = {}   # preferred
 
 airports = {'IAD': 'Dulles', 'SEA': 'Seattle-Tacoma',  # initialize dict with literal key/value pairs (keys can be any string, number or tuple)
             'RDU': 'Raleigh-Durham', 'LAX': 'Los Angeles'}
@@ -17,3 +18,9 @@ print(airports['LAX'])
 airports['SLC'] = 'Salt Lake City'  # assign to new key
 airports['LAX'] = 'Lost Angels'  # overwrite existing key
 print(airports['SLC'])
+airports['MCI'] = "Orlando"
+airports['EWR'] = "Newark"
+
+spam = {}  # empty dict
+spam['red'] = 25
+print(f"{spam = }")

@@ -1,6 +1,6 @@
-fruits = ['apple', 'cherry', 'orange', 'kiwi', 'banana', 'pear', 'fig'] # list
+fruits = ['apple', 'cherry', 'orange', 'kiwi', 'banana', 'pear', 'fig'] # list [1, 2, 3]
 full_name = "Guido van Rossum"  # str
-place = "Durham", "NC"  # tuple
+place = "Durham", "NC"  # tuple  ("Durham", "NC")  (5, 9, 48.6)
 data = b'wombat'   # bytes
 
 

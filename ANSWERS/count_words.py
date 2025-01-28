@@ -4,7 +4,7 @@ if len(sys.argv) < 3:
     print("Syntax: count_words.py PATTERN FILE ...")
     sys.exit()
 
-pattern = sys.argv[1]
+pattern = sys.argv[1]  # sys.argv[0] is script name
 
 for file_name in sys.argv[2:]:
     count = 0

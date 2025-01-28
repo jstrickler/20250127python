@@ -1,4 +1,4 @@
-import os
+import os  # os.path
 file_name = 'states.txt'
 temp_name = "temp.txt"
 

@@ -1,4 +1,4 @@
-FILE_PATH = '../DATA/mary.txt'
+FILE_PATH = '../DATA/mary.txt'  # DATA/mary.txt
 
 mary_in = open(FILE_PATH)  # open file for reading
 # read file...

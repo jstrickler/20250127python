@@ -21,6 +21,16 @@ for row in people:
     print(first_name, last_name)
 print()
 
-for first_name, last_name, _ in people:  # a for loop unpacks if there is more than one variable
+for first_name, last_name, _ in people:
+    # a for loop unpacks if there is more than one variable
     print(first_name, last_name)
 print()
+
+data = [
+    ('NC', 'Raleigh'),
+    ('CA', 'Sacramento'),
+    ('FL', 'Tallahassee'),
+]
+
+for state, capital in data:
+    print(f"{capital} is the capital of {state}")

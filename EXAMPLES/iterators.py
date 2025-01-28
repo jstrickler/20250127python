@@ -15,3 +15,7 @@ print()
 
 for first_name, last_name in full_names:
     print(f"{first_name} {last_name}")
+
+full_names = zip(first_names, last_names)  # zip() returns an iterator of tuples created from corresponding elements
+print(f"{list(full_names) = }")
+
