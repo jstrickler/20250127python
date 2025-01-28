@@ -5,6 +5,7 @@ average = 3.4563892382
 
 # variables inserted into string
 print("It is {}\u00B0 in {}".format(temperature, city))
+print(f"It is {temperature}\u00B0 in {city}")
 print()
 
 # :03d means format (decimal) integer in 3 characters, 
