@@ -3,6 +3,6 @@ fruits = ['pomegranate', 'cherry', 'apricot', 'Apple',
 'Papaya', 'FIG', 'pear', 'banana', 'Tamarind', 'Persimmon', 
 'elderberry', 'peach', 'BLUEberry', 'lychee', 'GRAPE', 'date' ]
 
-fruits.sort(key=str.lower)  # List is sorted in place; cannot be undone
+fruits.sort(key=str.lower, reverse=True)  # List is sorted in place; cannot be undone
 
 print(f"fruits: {fruits}")

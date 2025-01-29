@@ -1,10 +1,10 @@
 import logging
 
 logging.basicConfig(
-    format='%(levelname)s %(name)s %(asctime)s %(filename)s %(lineno)d %(message)s', # set the format for log entries
-    datefmt="%x-%X",
+    format='==> %(levelname)s %(name)s %(asctime)s %(filename)s %(lineno)d %(message)s', # set the format for log entries
+#    datefmt="%x-%X",
     filename='../LOGS/formatted.log',
-    level=logging.INFO,
+    level=logging.DEBUG,
 )
 
 logging.info("this is information")
@@ -14,6 +14,8 @@ value = 38.7
 logging.error("Invalid value %s", value)
 logging.info("this is information")
 logging.critical("this is critical")
+logging.debug("DEBUG DEBUG")
+
 
 
 

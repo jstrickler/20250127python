@@ -6,9 +6,16 @@ fruit = ["pomegranate", "cherry", "apricot", "date", "Apple", "lemon",
 def ignore_case(item):  # Parameter is _one_ element of iterable to be sorted
     return item.lower()  # Return value to sort on
 
+#  key=str.lower
 fs1 = sorted(fruit, key=ignore_case)  # Specify function with named parameter key
 print("Ignoring case:")
 print(f"fs1: {fs1}\n")
+
+fs1x = sorted(fruit, key=str.lower)
+print(f"{fs1x = }\n")
+
+flen = sorted(fruit, key=len)
+print(f"{flen = }\n")
 
 
 def by_length_then_name(item):
@@ -27,3 +34,6 @@ print(f"n1: {n1}\n")
 n2 = sorted(nums, key=str)  # Sort numbers as strings
 print("Numbers sorted as strings:")
 print(f"n2: {n2}\n")
+
+lam1 = sorted(fruit, key=lambda f: (f[-1]))
+print(f"{lam1 = }\n")
