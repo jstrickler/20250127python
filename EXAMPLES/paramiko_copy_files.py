@@ -9,8 +9,8 @@ from paramiko import Transport, SFTPClient
 
 REMOTE_DIR = 'text_files'
 
-with Transport(('localhost', 22)) as transport:  # create paramiko Transport instance
-    transport.connect(username='python', password='l0lz')  # connect to remote host
+with Transport(('sdf.org', 22)) as transport:  # create paramiko Transport instance
+    transport.connect(username='pythonstudent', password='Il0vePy')  # connect to remote host
     sftp = SFTPClient.from_transport(transport)  # create SFTP client using Transport instance
     for item in sftp.listdir_iter():  # get list of items on default (login) folder (listdir_iter() returns an iterator)
         print(item)

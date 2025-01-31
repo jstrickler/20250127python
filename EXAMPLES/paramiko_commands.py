@@ -4,7 +4,7 @@ with paramiko.SSHClient() as ssh:  # create paramiko client
 
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # ignore missing keys (this is safe)
 
-    ssh.connect('localhost', username='python', password='l0lz')  # connect to remote host
+    ssh.connect('sdf.org', username='pythonstudent', password='Il0vePy')  # connect to remote host
 
     stdin, stdout, stderr = ssh.exec_command('whoami')  # execute remote command; returns standard I/O objects
     print(stdout.read().decode())  # read stdout of command
