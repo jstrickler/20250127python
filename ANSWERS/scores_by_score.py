@@ -1,3 +1,5 @@
+from pprint import pprint
+
 scores = {}
 total_of_scores = 0
 
@@ -10,8 +12,15 @@ with open(DATA_FILE) as f:
         scores[name] = score
         total_of_scores += score
 
-for student, score in sorted(scores.items(), key=lambda e: (e[1]),
-                             reverse=True):
+pprint(scores)
+print('-' * 60)
+pprint(scores.items())
+print('-' * 60)
+
+def by_score(element):
+    return element[1]
+
+for student, score in sorted(scores.items(), key=by_score, reverse=True):
     grade = None
     if score > 94:
         grade = 'A'

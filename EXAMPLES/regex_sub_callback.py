@@ -11,6 +11,7 @@ officia deserunt Y-45 mollit anim id est dlaborum"""
 rx_code = re.compile(r'(?P<letter>[A-Z])-(?P<number>\d{2,3})', re.I)
 
 def update_code(m):  # callback function is passed each match object
+    print(f"{m = }")
     letter = m.group('letter').upper()
     number = int(m.group('number'))
     return f'{letter}:{number:04d}'  # function returns replacement text

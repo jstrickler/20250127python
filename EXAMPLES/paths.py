@@ -4,8 +4,9 @@ import os.path
 unix_rel = "bin/spam.txt"  # Unix relative path
 unix_abs = "/usr/local/bin/ham"  # Unix absolute path
 
-win_rel = r"spam\ham.doc"  # Windows relative path
-win_unc = r"\\spam\ham\eggs\toast\jam.doc"  # Windows UNC path
+win_rel = "spam/ham.doc"  # Windows relative path
+win_unc = "//spam/ham/eggs/toast/jam.doc"  # Windows UNC path
+win_drive = r"c:/spam/ham/eggs.csv"
 
 if sys.platform == 'win32':  # Are we on Windows?
     print("win_rel:", win_rel)
@@ -25,6 +26,4 @@ else:  # Mac/Linux
     print("basename(unix_abs):", os.path.basename(unix_abs))
     print("isabs(unix_rel):", os.path.isabs(unix_rel))  # Is it an absolute path?
     print("isabs(unix_abs):", os.path.isabs(unix_abs))
-    print(f"os.path.expanduser('~'): {os.path.expanduser('~')}")
-    print(f"os.path.expanduser('~root'): {os.path.expanduser('~root')}")
     

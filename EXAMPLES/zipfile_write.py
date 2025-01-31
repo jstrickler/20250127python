@@ -12,7 +12,8 @@ zip_out = ZipFile(zipfile_name, mode="w", compression=ZIP_DEFLATED)  # Create ne
 # add files to zip file
 for file_name in file_names:
     file_path = os.path.join(file_folder, file_name)
-    zip_out.write(file_path, file_name)  # Add member to zip file
+    archive_file_path = os.path.join('DATA', file_name)
+    zip_out.write(file_path, archive_file_path)  # Add member to zip file
 zip_out.close()
 
 # list files in zip 

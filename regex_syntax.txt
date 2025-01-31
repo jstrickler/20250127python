@@ -1,0 +1,75 @@
+
+pat     "pat" "a lovely pattern"   "compatible apps"
+...
+
+p.t     "a pattern"   "spiteful sayings"  "put your coat on"  "keep to the right"
+
+p..t   "the poet"  "a proton snack"
+
+p[aeiou]t
+.   .   .
+
+p[a-z]t  shortcut based on ASCII/Unicode
+
+p[0-9]t
+
+p[a-z0-9,]t
+
+p[aeiou][aeiou]t
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+spam[^-]ham  "spam ham"  "spam#ham"   "spamaham"
+
+\d\d\d-\d\d-\d\d\d\d
+
+\d any digit  [0-9]
+\w any letter, digit, or underscore  [a-zA-Z0-9_]
+\s any space, tab, newline, or carriage return  [ \t\n\r\b]
+
+pat  
+
+pa+t   'p' + one or more 'a' + 't'    "pat"  "paaaat" "paaaaaaaaaaat" NOT "pt"
+
+pa*t 'p' + zero or more 'a' + 't'  "pat" "paaaaat"  "pt"
+
+wal\s*mart    "wal mart" "walmart"  "wal            mart"
+
+wal ?mart  "wal mart" "walmart"
+.... ....
+
+\d{3}-\d{2}-\d{4}
+
+p[aeiou]{1,2}t
+
+pa{1,}t  
+
+St\.\s+Francis      "St. Francis"
+
+^\d+$  "123"  NOT "abcdef123xyz"
+
+^\s*\d+\s*$   "123"  "   123"  "   123  "   NOT "12 3"  "   123m"
+
+^foo    "football"   "foobar"   NOT "tenderfoot"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

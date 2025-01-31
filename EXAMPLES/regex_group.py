@@ -8,6 +8,9 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
+# group 2            ......
+# group 1    .....
+# group 0   .................
 pattern = r'([A-Z])-(\d{2,3})'  # parens delimit groups
 
 print("Group 0            Group 1              Group 2")

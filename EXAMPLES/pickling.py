@@ -32,7 +32,7 @@ with open('../TEMP/pickled_data.pkl', 'wb') as pkl_out:  # open pickle file for 
     pickle.dump(data, pkl_out)  # serialize data structures to pickle file
 
 with open('../TEMP/pickled_data.pkl', 'rb') as pkl_in:  # open pickle file for reading in binary mode
-    pickled_data = pickle.load(pkl_in)  # de-serialize pickle file back into data structures
+    unpickled_data = pickle.load(pkl_in)  # de-serialize pickle file back into data structures
 
 print("AFTER:")
-pprint(pickled_data)  # view data structures
+pprint(unpickled_data)  # view data structures

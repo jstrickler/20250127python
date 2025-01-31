@@ -4,7 +4,7 @@
 import sys
 import os
 
-MINIMUM_SIZE = 1000
+MINIMUM_SIZE = 5000000
 
 if len(sys.argv) < 2: # make sure there is at least one command line argument
     print('Syntax: walk2.py START-DIR')

@@ -14,7 +14,7 @@ while True:
     expr = input("Enter a math expression: ")
 
     if expr.lower() == 'q':
-        break
+        break  # leave the loop
 
     v1, op, v2 = expr.split()
     v1 = float(v1)
@@ -30,6 +30,6 @@ while True:
         result = div(v1, v2)
     else:
         print("Bad operator!")
-        continue
+        continue  # start the loop over
 
     print(f"{result:.3f}")

@@ -1,5 +1,6 @@
 from datetime import datetime, date
 
+# x = date(2023, 11, 19)  # nov 11, 2023
 today = date.today()
 print(f"today: {today}")
 print(f"type(today): {type(today)}")
@@ -19,7 +20,7 @@ print(f"now.microsecond: {now.microsecond}")
 print()
 
 d1 = datetime(2018, 6, 13, 4, 55, 27, 8082)  # create a date object
-d2 = datetime(2018, 8, 24)
+d2 = datetime(2018, 8, 24, 16, 32, 55)
 delta = d2 - d1  # date objects can be subtracted from other date objects
 
 print(f"delta: {delta}")  # timedelta has days, seconds, and microseconds

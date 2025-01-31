@@ -1,5 +1,6 @@
 import sys
-import geometry  # find and run geometry.py
+# import pkg.pkg.module as name
+import alpha.mathlib.geometry as geometry  # find and run geometry.py
 
 circle = geometry.circle_area(8)
 print(f"{circle = }")

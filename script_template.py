@@ -26,5 +26,5 @@ def function1():
     """
     print("this is function1()")
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # if this file is run directly with python
     main(sys.argv[1:])  # Pass command line args (minus script name) to main()
